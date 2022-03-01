@@ -24,6 +24,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="D:/CLionProject/SapiSales/sapi_sales/headers/manager"/>
+					<Add directory="D:/CLionProject/SapiSales/sapi_sales/headers/models"/>
+					<Add directory="D:/CLionProject/SapiSales/shared/headers"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
@@ -42,6 +45,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="D:/CLionProject/SapiSales/sapi_sales/headers/manager"/>
+					<Add directory="D:/CLionProject/SapiSales/sapi_sales/headers/models"/>
+					<Add directory="D:/CLionProject/SapiSales/shared/headers"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
@@ -74,7 +80,46 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/CLionProject/SapiSales/main.c">
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/manager/lab2.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/manager/lab_manager.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/product.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/user.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/main.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/manager/lab2.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/manager/lab_manager.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/product.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/user.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/shared/headers/errors.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/shared/headers/messages.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/shared/headers/useful.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/shared/src/errors.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/shared/src/messages.c">
 			<Option target="SapiSales"/>
 		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/CMakeLists.txt">
