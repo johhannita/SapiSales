@@ -30,10 +30,10 @@ Product* createProduct(char *id, char *name, enum ProductType type, unsigned int
 
 void printProduct(Product *product){
     printf("%s details:\n"
-           "\t - ID: %i\n"
+           "\t - ID: %s\n"
            "\t - TYPE: %s\n"
-           "\t - AMOUNT: %s\n"
-           "\t -  CREATION DATE: %i\n",
+           "\t - AMOUNT: %u\n"
+           "\t - CREATION DATE: %ld\n",
            product->name,
            product->id,
            getProductType(product->type),
