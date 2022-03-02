@@ -47,11 +47,51 @@ char* getGender(enum Gender type){
             return "Undefined";
     }
 }
-User* createUser (char* name, enum UserType type, enum Gender gender, enum Specialization specialization, unsigned int birthYear){
+void createU(User* user){
+    user = malloc(sizeof(User));
+}
+
+void deleteUser(User* user){
+    free(user);
+}
+
+
+User* getUserData(User* user,
+                  char* name,
+                  enum UserType type,
+                  enum Gender gender,
+                  enum Specialization specialization,
+                  unsigned int day,
+                  unsigned int month,
+                  unsigned int year){
+    BirthDate* birthDay = malloc(sizeof (BirthDate));
+    birthDay->day = day;
+    birthDay->month = month;
+    birthDay->year = year;
+    user->id = ++numberOfUsers;
+    user->specialization = specialization;
+    user->birthDay = birthDay;
+    user->gender = gender;
+    user->type = type;
+    strcpy(user->name, name);
+    return user;
+}
+
+User* createUser (char* name,
+                  enum UserType type,
+                  enum Gender gender,
+                  enum Specialization specialization,
+                  unsigned int day,
+                  unsigned int month,
+                  unsigned int year){
     User* newUser = malloc(sizeof(User));
+    BirthDate* birthDay = malloc(sizeof (BirthDate));
+    birthDay->day = day;
+    birthDay->month = month;
+    birthDay->year = year;
     newUser->id = ++numberOfUsers;
     newUser->specialization = specialization;
-    newUser->birthYear = birthYear;
+    newUser->birthDay = birthDay;
     newUser->gender = gender;
     newUser->type = type;
     strcpy(newUser->name, name);
@@ -64,11 +104,14 @@ void printUser(User *user){
            "\t - TYPE: %s\n"
            "\t - GENDER: %s\n"
            "\t - SPECIALIZATION: %s\n"
-           "\t - BIRTH YEAR: %i\n",
+           "\t - BIRTH DAY: %i.%i.%i.",
            user->name,
            user->id,
            getUserType(user->type),
            getGender(user->gender),
            getSpecializaion(user->specialization),
-           user->birthYear);
+           user->birthDay->day,
+           user->birthDay->month,
+           user->birthDay->year);
+
 }

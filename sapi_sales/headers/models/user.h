@@ -29,6 +29,11 @@ enum Specialization {
     MATHEMATICS_INFORMATICS,
     ENGINEERING
 };
+typedef struct {
+    unsigned int day;
+    unsigned int month;
+    unsigned int year;
+}BirthDate;
 
 typedef struct {
     unsigned int id;
@@ -36,18 +41,31 @@ typedef struct {
     enum UserType type;
     enum Gender gender;
     enum Specialization specialization;
-    unsigned int birthYear;
+    BirthDate* birthDay;
 }User;
+
+
 char* getSpecializaion(enum Specialization specialization);
 char* getUserType(enum UserType type);
 char* getGender(enum Gender type);
 
-User* createUser(
-    char* name,
-    enum UserType type,
-    enum Gender gender,
-    enum Specialization specialization,
-    unsigned int birthYear);
+User* createUser (char* name,
+                  enum UserType type,
+                  enum Gender gender,
+                  enum Specialization specialization,
+                  unsigned int day,
+                  unsigned int month,
+                  unsigned int year);
 
 void printUser(User *user);
+void createU(User* user);
+void deleteUser(User* user);
+User* getUserData(User* user,
+                   char* name,
+                   enum UserType type,
+                   enum Gender gender,
+                   enum Specialization specialization,
+                   unsigned int day,
+                   unsigned int month,
+                   unsigned int year);
 #endif //SAPISALES_USER_H

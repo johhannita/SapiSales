@@ -18,6 +18,24 @@ char* getProductType(enum ProductType type){
     }
 }
 
+Product* createP(Product* product){
+    product = malloc(sizeof (Product));
+    return product;
+}
+
+Product* deleteProduct(Product* product){
+    free(product);
+}
+
+Product* getProductData(Product* product, char *id, char *name, enum ProductType type, unsigned int amount){
+    strcpy(product->id, id);
+    strcpy(product->name, name);
+    product->type = type;
+    product->amount = amount;
+    product->creationDate = time(NULL);
+    return product;
+}
+
 Product* createProduct(char *id, char *name, enum ProductType type, unsigned int amount){
     Product* newProduct = malloc(sizeof(Product));
     strcpy(newProduct->id, id);

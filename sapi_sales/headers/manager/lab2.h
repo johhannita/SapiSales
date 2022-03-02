@@ -8,4 +8,5 @@
 #include "user.h"
 #include "product.h"
 void testUserFunctionalities();
+void testProductFunctionalities();
 #endif //SAPISALES_LAB2_H

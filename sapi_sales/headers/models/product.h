@@ -33,6 +33,8 @@ Product* createProduct(
     unsigned int amount);
 
 void printProduct(Product* product);
-
+Product* getProductData(Product* product, char *id, char *name, enum ProductType type, unsigned int amount);
+Product* deleteProduct(Product* product);
+Product* createP(Product* product);
 
 #endif //SAPISALES_PRODUCT_H
