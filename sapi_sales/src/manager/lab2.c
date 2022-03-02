@@ -3,8 +3,8 @@
 //
 #include "lab2.h"
 void testUserFunctionalities(){
-    ///After lab2 this need to be commnted because the birth year of the user is changed to BirthDate struct
-    /*//Declaring user pointers
+    /*///After lab2 this need to be commented because the birth year of the user is changed to BirthDate struct
+    ///Declaring user pointers
     User *user1, *user2, *user3;
 
     ///Creating users

@@ -36,13 +36,14 @@ Product* getProductData(Product* product, char *id, char *name, enum ProductType
     return product;
 }
 
-Product* createProduct(char *id, char *name, enum ProductType type, unsigned int amount){
+Product* createProduct(char *id, char *name, enum ProductType type, unsigned int amount, double price){
     Product* newProduct = malloc(sizeof(Product));
     strcpy(newProduct->id, id);
     strcpy(newProduct->name, name);
     newProduct->type = type;
     newProduct->amount = amount;
     newProduct->creationDate = time(NULL);
+    newProduct->price = price;
     return newProduct;
 }
 
@@ -51,10 +52,12 @@ void printProduct(Product *product){
            "\t - ID: %s\n"
            "\t - TYPE: %s\n"
            "\t - AMOUNT: %u\n"
-           "\t - CREATION DATE: %ld\n",
+           "\t - CREATION DATE: %ld\n"
+           "\t - PRICE: %lf\n",
            product->name,
            product->id,
            getProductType(product->type),
            product->amount,
-           product->creationDate);
+           product->creationDate,
+           product->price);
 }

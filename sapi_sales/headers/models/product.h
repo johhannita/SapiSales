@@ -22,6 +22,7 @@ typedef struct {
     enum ProductType type;
     unsigned int amount;
     time_t creationDate;
+    double price;
 }Product;
 
 char* getProductType(enum ProductType type);
@@ -30,7 +31,8 @@ Product* createProduct(
     char id[10],
     char name[20],
     enum ProductType type,
-    unsigned int amount);
+    unsigned int amount,
+    double price);
 
 void printProduct(Product* product);
 Product* getProductData(Product* product, char *id, char *name, enum ProductType type, unsigned int amount);

@@ -74,7 +74,6 @@ User* getUserData(User* user,
     user->gender = gender;
     user->type = type;
     strcpy(user->name, name);
-    return user;
 }
 
 User* createUser (char* name,
