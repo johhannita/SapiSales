@@ -1,42 +1,43 @@
 //
 // Created by Johanna on 3/1/2022.
 //
-#include <stdlib.h>
-#include <stdio.h>
-#include <sys/utime.h>
-#include <string.h>
-#include <time.h>
+
 #ifndef SAPISALES_PRODUCT_H
 #define SAPISALES_PRODUCT_H
 
-enum ProductType {
+#include <stdlib.h>
+#include <sys/utime.h>
+#include <string.h>
+#include <stdio.h>
+#include <time.h>
+#include "useful.h"
+#include "messages.h"
+#include "errors.h"
+
+enum ProductType{
     GROCERY,
     FRUIT,
     SCHOOL,
+    VEGETABLE,
     OBJECT
 };
 
 typedef struct {
-    char id[10];
+    int id;
     char name[20];
     enum ProductType type;
     unsigned int amount;
     time_t creationDate;
-    double price;
+    //float price;
 }Product;
 
 char* getProductType(enum ProductType type);
 
-Product* createProduct(
-    char id[10],
-    char name[20],
-    enum ProductType type,
-    unsigned int amount,
-    double price);
+void createProduct(Product **product);
+void setProductData(Product* product,char name[20],enum ProductType type, unsigned int amount);
 
-void printProduct(Product* product);
-Product* getProductData(Product* product, char *id, char *name, enum ProductType type, unsigned int amount);
-Product* deleteProduct(Product* product);
-Product* createP(Product* product);
+
+void printProduct(Product* product, char* destination);
+void deleteProduct(Product** product);
 
 #endif //SAPISALES_PRODUCT_H

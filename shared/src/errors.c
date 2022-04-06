@@ -5,13 +5,20 @@
 void printErrorMessage(enum ErrorType errorType){
     switch (errorType) {
         case MEMORY_ALLOCATION:
-            printf("Error while allocating memory.\n");
+            printf("Bad memory allocation error\n");
             break;
         case FILE_NOT_FOUND:
-            printf("Error. File not found.\n");
+            printf("File not found exception\n");
             break;
         case NULL_POINTER_EXCEPTION:
-            printf("Error. NULL value.");
+            printf("Nincs inicializalva\n");
+            break;
+        case ADD_PRODUCT_ERROR:
+            printf("Cannot add new product exception\n");
+            break;
+        default:
+            printf("Error occured\n");
             break;
     }
+    exit(-1);
 }

@@ -7,6 +7,8 @@ char* getProductType(enum ProductType type){
     switch (type) {
         case GROCERY:
             return "Grocery";
+        case VEGETABLE:
+            return "Vegetable";
         case FRUIT:
             return "Fruit";
         case SCHOOL:
@@ -17,47 +19,46 @@ char* getProductType(enum ProductType type){
             return "Undefined";
     }
 }
-
-Product* createP(Product* product){
-    product = malloc(sizeof (Product));
-    return product;
+void createProduct(Product** product){
+    (*product)= malloc(sizeof(Product));
+    if(!(*product)){
+        printErrorMessage(MEMORY_ALLOCATION);
+    }
+    (*product)->id = (int)++numberOfProducts;
 }
 
-Product* deleteProduct(Product* product){
-    free(product);
-}
-
-Product* getProductData(Product* product, char *id, char *name, enum ProductType type, unsigned int amount){
-    strcpy(product->id, id);
-    strcpy(product->name, name);
+void setProductData(Product* product,char*name,enum ProductType type,unsigned int amount){
+    if(!product){
+        printErrorMessage(NULL_POINTER_EXCEPTION);
+    }
+    strcpy(product->name,name);
     product->type = type;
     product->amount = amount;
     product->creationDate = time(NULL);
-    return product;
 }
 
-Product* createProduct(char *id, char *name, enum ProductType type, unsigned int amount, double price){
-    Product* newProduct = malloc(sizeof(Product));
-    strcpy(newProduct->id, id);
-    strcpy(newProduct->name, name);
-    newProduct->type = type;
-    newProduct->amount = amount;
-    newProduct->creationDate = time(NULL);
-    newProduct->price = price;
-    return newProduct;
-}
-
-void printProduct(Product *product){
-    printf("%s details:\n"
-           "\t - ID: %s\n"
-           "\t - TYPE: %s\n"
-           "\t - AMOUNT: %u\n"
-           "\t - CREATION DATE: %ld\n"
-           "\t - PRICE: %lf\n",
+void printProduct(Product* product,char* destination){
+    if(!product){
+        printErrorMessage(NULL_POINTER_EXCEPTION);
+    }
+    freopen(destination,"w",stdout);
+    printf("\t%s details:\n"
+           "\t\t - ID: %i\n"
+           "\t\t - TYPE: %s\n"
+           "\t\t - AMOUNT: %u\n"
+           "\t\t - CREATION DATE: %lld\n",
            product->name,
            product->id,
            getProductType(product->type),
            product->amount,
-           product->creationDate,
-           product->price);
+           product->creationDate);
+    freopen(CON,"w",stdout);
+}
+
+void deleteProduct(Product **product) {
+    if(*product != NULL){
+        free(*product);
+        *product = NULL;
+        printDeleteMessage(PRODUCT);
+    }
 }

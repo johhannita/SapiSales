@@ -83,13 +83,34 @@
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/manager/lab2.h">
 			<Option target="SapiSales"/>
 		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/manager/lab3.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/manager/lab4.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/manager/lab5.h">
+			<Option target="SapiSales"/>
+		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/manager/lab_manager.h">
 			<Option target="SapiSales"/>
 		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/product.h">
 			<Option target="SapiSales"/>
 		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/product_array.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/product_stack.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/queue/user_queue.h">
+			<Option target="SapiSales"/>
+		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/user.h">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/user_array.h">
 			<Option target="SapiSales"/>
 		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/main.c">
@@ -98,13 +119,34 @@
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/manager/lab2.c">
 			<Option target="SapiSales"/>
 		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/manager/lab3.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/manager/lab4.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/manager/lab5.c">
+			<Option target="SapiSales"/>
+		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/manager/lab_manager.c">
 			<Option target="SapiSales"/>
 		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/product.c">
 			<Option target="SapiSales"/>
 		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/product_array.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/product_stack.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/queue/user_queue.c">
+			<Option target="SapiSales"/>
+		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/user.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/user_array.c">
 			<Option target="SapiSales"/>
 		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/shared/headers/errors.h">

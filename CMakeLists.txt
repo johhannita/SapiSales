@@ -23,7 +23,7 @@ add_executable(
         sapi_sales/src/manager/lab2.c
         sapi_sales/src/manager/lab_manager.c
         sapi_sales/src/models/product.c
-        sapi_sales/src/models/user.c)
+        sapi_sales/src/models/user.c sapi_sales/src/manager/lab3.c sapi_sales/headers/manager/lab3.h sapi_sales/src/models/user_array.c sapi_sales/headers/models/user_array.h sapi_sales/src/models/product_array.c sapi_sales/headers/models/product_array.h sapi_sales/src/models/product_stack.c sapi_sales/headers/models/product_stack.h sapi_sales/src/manager/lab4.c sapi_sales/headers/manager/lab4.h sapi_sales/src/manager/lab5.c sapi_sales/headers/manager/lab5.h sapi_sales/src/models/queue/user_queue.c sapi_sales/headers/models/queue/user_queue.h)
 include_directories(
         sapi_sales/headers/manager
         sapi_sales/headers/models

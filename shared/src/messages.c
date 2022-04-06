@@ -13,7 +13,7 @@ void printDescriptionMessage(enum LabType messageType){
             break;
         case LAB3:
             printf("\n****************************************************************\n");
-            printf("Testing Testing User with modified BirthDate and UserArray functionalities");
+            printf("Testing User with modified BirthDate and UserArray functionalities");
             printf("\n****************************************************************\n");
             break;
         default:
