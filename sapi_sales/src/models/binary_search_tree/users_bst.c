@@ -28,7 +28,7 @@ bool search (UserTreeNode* userTreeNode, char* id){
         search(userTreeNode->right, id);
     }
     else {
-        search(userTreeNode->left, id)
+        search(userTreeNode->left, id);
     }
 }
 void inorderPrint(UserTreeNode* userTreeNode){
