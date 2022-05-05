@@ -2,7 +2,7 @@
 // Created by Johanna on 3/9/2022.
 //
 
-#include "user_array.h"
+#include "array/user_array.h"
 #include "user.h"
 
 //        1.Tömb létrehozása/ felszabadítása - createUserArray

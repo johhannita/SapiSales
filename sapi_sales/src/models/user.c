@@ -2,13 +2,13 @@
 // Created by Johanna on 3/1/2022.
 //
 #include "user.h"
-#include "product_array.h"
+#include "array/product_array.h"
 #include "useful.h"
 #include <time.h>
 #include <stdbool.h>
 
 
-//int numberOfUsers = 0;
+
 
 char* getUserType(enum UserType type){
     switch (type) {
@@ -97,14 +97,15 @@ void createUser(User **user) {
     (*user)->id = ++numberOfUsers;
     createProductArray(&(*user)->myProducts,MAX_PRODUCTS);
 }
-void setUserData(User *user, char* name, enum UserType type,enum Gender gender, enum Spetialization spetialization, BirthDate birthYear){
+void setUserData(User *user, char* name, enum UserType type,enum Gender gender, enum Spetialization specialization, int year,
+        int month, int day){
     if(!user){
         printErrorMessage(NULL_POINTER_EXCEPTION);
     }
-    user->spetialization = spetialization;
-    user->birthDate.year = birthYear.year;
-    user->birthDate.month = birthYear.month;
-    user->birthDate.day = birthYear.day;
+    user->spetialization = specialization;
+    user->birthDate.year = year;
+    user->birthDate.month = month;
+    user->birthDate.day = day;
     user->gender = gender;
     user->type = type;
     strcpy(user->name,name);
@@ -150,9 +151,9 @@ void addNewProductToUser(User *user,Product *newProduct,int position){
 }
 void printMyProducts(User *user,char *destination){
     printf("\n\tPRODUCTS:\n\n");
-    for(int i = 0;i < user->myProducts->maxProducts;++i){
-        if(user->myProducts->products[i] != NULL){
-            printProduct(user->myProducts->products[i],destination);
+    for(int i = 0;i < user->myProducts;++i){
+        if(user->myProducts->product[i] != NULL){
+            printProduct(user->myProducts->product[i],destination);
         }
     }
 }

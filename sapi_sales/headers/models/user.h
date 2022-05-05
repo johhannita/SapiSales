@@ -9,7 +9,7 @@
 #include "useful.h"
 #include "errors.h"
 #include "messages.h"
-#include "../array/product_array.h"
+#include "array/product_array.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -59,7 +59,8 @@ char* getGender(enum Gender type);
 char* getSpetialization(enum Spetialization type);
 
 void createUser(User** user);
-void setUserData(User *user, char* name, enum UserType type,enum Gender gender, enum Spetialization spetialization, BirthDate birthDate);
+void setUserData(User *user, char* name, enum UserType type,enum Gender gender, enum Spetialization specialization, int year,
+                 int month, int day);
 
 void printUser(User* user,char* destination);
 void deleteUser(User** user);
@@ -81,5 +82,6 @@ void printMyProducts(User *user,char *destination);
  * @param user maga a felhasznalo
  */
 void readUserProducts(User *user);
+void getUserName();
 
 #endif //SAPISALES_USER_H

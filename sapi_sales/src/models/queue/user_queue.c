@@ -29,8 +29,8 @@ bool queueIsFull(UserQueue **userQueue){
     else{return false;}
 }
 void enqueue(UserQueue* userQueue, User *user){
-    userQueue->rear +=1;
     if(!(queueIsFull(&userQueue))){
+        userQueue->rear +=1;
         user[userQueue->rear] = *user;
 
     }
@@ -40,6 +40,9 @@ void dequeue(UserQueue* userQueue){
     if(!(queueIsEmpty(&userQueue))){
         userQueue->front +=1;
     }
+}
+int findUserInQueue(int userId){
+
 }
 int findElementInQueue(UserQueue* userQueue, int userId){
 

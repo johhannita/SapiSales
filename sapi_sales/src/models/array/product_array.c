@@ -3,7 +3,7 @@
 //
 
 
-#include "product_array.h"
+#include "array/product_array.h"
 
 void createProductArray(ProductArray** productArray, unsigned int maxProducts){
     *productArray = (productArray*)malloc(1*sizeof(productArray));

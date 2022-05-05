@@ -4,7 +4,7 @@
 
 #ifndef SAPISALES_LAB5_H
 #define SAPISALES_LAB5_H
-#include "product_stack.h"
+#include "stack/product_stack.h"
 #include "stdio.h"
 #include "useful.h"
 void testProductStackFunctionalities();

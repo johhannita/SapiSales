@@ -2,7 +2,7 @@
 // Created by Johanna on 4/6/2022.
 //
 
-#include "product_stack.h"
+#include "stack/product_stack.h"
 void createProductStack(ProductStack** productStack,unsigned int capacity){
     *productStack = (ProductStack*)malloc(sizeof (ProductStack));
     if(!(*productStack)){
