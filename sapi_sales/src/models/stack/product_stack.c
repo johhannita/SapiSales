@@ -3,6 +3,7 @@
 //
 
 #include "stack/product_stack.h"
+
 void createProductStack(ProductStack** productStack,unsigned int capacity){
     *productStack = (ProductStack*)malloc(sizeof (ProductStack));
     if(!(*productStack)){

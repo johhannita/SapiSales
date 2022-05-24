@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "D:/CLionProject/SapiSales/sapi_sales/src/main.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/main.c.obj"
+  "D:/CLionProject/SapiSales/sapi_sales/src/manager/lab12.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.obj"
   "D:/CLionProject/SapiSales/sapi_sales/src/manager/lab2.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab2.c.obj"
   "D:/CLionProject/SapiSales/sapi_sales/src/manager/lab3.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab3.c.obj"
   "D:/CLionProject/SapiSales/sapi_sales/src/manager/lab4.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab4.c.obj"
@@ -19,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/CLionProject/SapiSales/sapi_sales/src/models/array/product_array.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/models/array/product_array.c.obj"
   "D:/CLionProject/SapiSales/sapi_sales/src/models/array/user_array.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/models/array/user_array.c.obj"
   "D:/CLionProject/SapiSales/sapi_sales/src/models/binary_search_tree/users_bst.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/models/binary_search_tree/users_bst.c.obj"
+  "D:/CLionProject/SapiSales/sapi_sales/src/models/hash/product_hash.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.obj"
   "D:/CLionProject/SapiSales/sapi_sales/src/models/list/user_list.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/models/list/user_list.c.obj"
   "D:/CLionProject/SapiSales/sapi_sales/src/models/product.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/models/product.c.obj"
   "D:/CLionProject/SapiSales/sapi_sales/src/models/queue/user_queue.c" "D:/CLionProject/SapiSales/cmake-build-debug/CMakeFiles/SapiSales.dir/sapi_sales/src/models/queue/user_queue.c.obj"

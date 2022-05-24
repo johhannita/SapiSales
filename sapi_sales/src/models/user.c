@@ -7,9 +7,6 @@
 #include <time.h>
 #include <stdbool.h>
 
-
-
-
 char* getUserType(enum UserType type){
     switch (type) {
         case STUDENT:
@@ -144,16 +141,16 @@ void deleteUser(User **user) {
         printDeleteMessage(USER);
     }
 }
-void addNewProductToUser(User *user,Product *newProduct,int position){
-    if(!addNewProduct(user->myProducts,newProduct,position)){
+/*void addNewProductToUser(User *user, Product *newProduct, int position){
+    if(!addNewProduct(user->myProducts, newProduct, position)){
         printErrorMessage(ADD_PRODUCT_ERROR);
     }
-}
+}*/
 void printMyProducts(User *user,char *destination){
     printf("\n\tPRODUCTS:\n\n");
     for(int i = 0;i < user->myProducts;++i){
         if(user->myProducts->product[i] != NULL){
-            printProduct(user->myProducts->product[i],destination);
+            printProduct(user->myProducts->product[i]);
         }
     }
 }

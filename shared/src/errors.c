@@ -16,6 +16,9 @@ void printErrorMessage(enum ErrorType errorType){
         case ADD_PRODUCT_ERROR:
             printf("Cannot add new product exception\n");
             break;
+        case ERR_REMOVIG_PRODUCT:
+            printf("Cannot remove element\n");
+            break;
         default:
             printf("Error occured\n");
             break;

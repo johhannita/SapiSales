@@ -13,7 +13,8 @@ enum ErrorType{
     NULL_POINTER_EXCEPTION,
     ADD_PRODUCT_ERROR,
     QUEUE_IS_FULL,
-    QUEUEE_IS_EMPTY
+    QUEUEE_IS_EMPTY,
+    ERR_REMOVIG_PRODUCT
 };
 void printErrorMessage(enum ErrorType errorType);
 #endif //SAPISALES_ERRORS_H

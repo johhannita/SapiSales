@@ -20,24 +20,23 @@ enum ProductType{
     SCHOOL,
     VEGETABLE,
     OBJECT
-};
+}ProductType;
 
 typedef struct {
     int id;
-    char name[20];
+    char* code;
+    char* name;
     enum ProductType type;
-    unsigned int amount;
-    time_t creationDate;
-    //float price;
+    int amount;
+    time_t timestamp;
 }Product;
 
+char* generateProductCode(Product product);
 char* getProductType(enum ProductType type);
 
-void createProduct(Product **product);
-void setProductData(Product* product,char name[20],enum ProductType type, unsigned int amount);
-
-
-void printProduct(Product* product, char* destination);
+void createProduct(Product** product);
+void setProduct(Product** product, char* name, enum ProductType productType, int amount);
 void deleteProduct(Product** product);
+void printProduct(Product* product);
 
 #endif //SAPISALES_PRODUCT_H

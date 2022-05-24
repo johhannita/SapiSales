@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/manager/lab12.h">
+			<Option target="SapiSales"/>
+		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/manager/lab2.h">
 			<Option target="SapiSales"/>
 		</Unit>
@@ -110,6 +113,9 @@
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/binary_search_tree/users_bst.h">
 			<Option target="SapiSales"/>
 		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/hash/product_hash.h">
+			<Option target="SapiSales"/>
+		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/headers/models/list/user_list.h">
 			<Option target="SapiSales"/>
 		</Unit>
@@ -126,6 +132,9 @@
 			<Option target="SapiSales"/>
 		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/main.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/manager/lab12.c">
 			<Option target="SapiSales"/>
 		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/manager/lab2.c">
@@ -156,6 +165,9 @@
 			<Option target="SapiSales"/>
 		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/binary_search_tree/users_bst.c">
+			<Option target="SapiSales"/>
+		</Unit>
+		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/hash/product_hash.c">
 			<Option target="SapiSales"/>
 		</Unit>
 		<Unit filename="D:/CLionProject/SapiSales/sapi_sales/src/models/list/user_list.c">

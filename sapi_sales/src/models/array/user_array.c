@@ -10,9 +10,6 @@
 //        3.i. felhasználó lekérdezése - getUserAtPosition
 //        4.Felhasználók kiiratása képernyőre/ állományba - Printusers
 //        5.felhasznalo torlese - deleteUserArray
-
-#include "../../headers/array/user_array.h"
-#include "user.h"
 // atirtuk az elozot
 void createUserArray(UserArray **userArray, int maxUsers){
     ///helyfoglalas a UserArray elemnek
@@ -117,9 +114,13 @@ void printUsers(UserArray *userArray,char *destination){
     }
     freopen(CON,"w",stdin);
 }
-void deleteUserArray(UserArray **userArray){
-    free((*userArray)->Users);
-    free((*userArray));
+void deleteUserArray(UserArray** userArray){
+    for (int i = 0; i < (*userArray)->numberOfUsers; ++i) {
+        free((*userArray)->Users[i]);
+    }
+
+    free(*userArray);
+    *userArray = NULL;
 }
 int searchbyid(UserArray *userArray,int id){
     if((*userArray).numberOfUsers == 0){

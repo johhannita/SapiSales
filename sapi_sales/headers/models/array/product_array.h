@@ -11,11 +11,11 @@
 typedef struct {
     Product** product;
     unsigned int capacity;
+    unsigned int numOfProducts;
 }ProductArray;
 
 void createProductArray(ProductArray** productArray, unsigned int maxProducts);
 void deleteProductArray(ProductArray** productArray);
-bool addNewProduct(ProductArray* productArray, Product *newProduct, unsigned int position);
-
+bool addNewProduct(ProductArray* productArray, Product* product);
 
 #endif //SAPISALES_PRODUCT_ARRAY_H

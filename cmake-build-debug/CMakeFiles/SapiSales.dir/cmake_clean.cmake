@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SapiSales.dir/sapi_sales/src/main.c.obj"
+  "CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.obj"
   "CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab2.c.obj"
   "CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab3.c.obj"
   "CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab4.c.obj"
@@ -10,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SapiSales.dir/sapi_sales/src/models/array/product_array.c.obj"
   "CMakeFiles/SapiSales.dir/sapi_sales/src/models/array/user_array.c.obj"
   "CMakeFiles/SapiSales.dir/sapi_sales/src/models/binary_search_tree/users_bst.c.obj"
+  "CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.obj"
   "CMakeFiles/SapiSales.dir/sapi_sales/src/models/list/user_list.c.obj"
   "CMakeFiles/SapiSales.dir/sapi_sales/src/models/product.c.obj"
   "CMakeFiles/SapiSales.dir/sapi_sales/src/models/queue/user_queue.c.obj"

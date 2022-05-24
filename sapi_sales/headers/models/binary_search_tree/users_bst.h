@@ -11,17 +11,16 @@ typedef struct UserTreeNode {
     struct UserTreeNode *left, *right;
 } UserTreeNode;
 
-void create (UserTreeNode** userTreeNode, User* info);
+void create (UserTreeNode** root);
 void insert (UserTreeNode** userTreeNode, User* user);
-bool search (UserTreeNode* userTreeNode, char* id);
-void inorderPrint(UserTreeNode* userTreeNode);
-void preorderPrint ();
-void postorderPrint();
+bool search (UserTreeNode* userTreeNode, unsigned int userId);
+void delete(UserTreeNode** root, unsigned int userId);
+void inorderPrint(UserTreeNode*, char*);
+void preorderPrint(UserTreeNode*, char*);
+void postorderPrint(UserTreeNode*, char*);
 
-User* minimum(UserTreeNode* userTreeNode);
-User* maximum(UserTreeNode* userTreeNode);
-
-UserTreeNode* delete(UserTreeNode** userTreeNode, int position);
+UserTreeNode* minimum(UserTreeNode* userTreeNode);
+UserTreeNode* maximum(UserTreeNode* userTreeNode);
 
 void destroy(UserTreeNode** userTreeNode);
 #endif //SAPISALES_USERS_BST_H

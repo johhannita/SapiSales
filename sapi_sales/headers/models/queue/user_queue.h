@@ -9,15 +9,15 @@
 typedef struct {
     int front;
     int rear;
-    unsigned int size;
+    int size;
     User ** user;
 }UserQueue;
 
 void createUserQueue(UserQueue **userQueue, unsigned int maxSize);
-bool queueIsEmpty(UserQueue **UserQueue);
-bool queueIsFull(UserQueue **UserQueue);
-void enqueue(UserQueue* userQueue, User *user);
-void dequeue(UserQueue* userQueue);
+bool queueIsEmpty(UserQueue *UserQueue);
+bool queueIsFull(UserQueue *UserQueue);
+bool enqueue(UserQueue* userQueue, User *user);
+bool dequeue(UserQueue* userQueue);
 int findElementInQueue(UserQueue* userQueue, int userId);
 void printQueue(UserQueue* userQueue, char* destination);
 void deleteQueue(UserQueue** pUserQueue);

@@ -27,32 +27,45 @@ void createProduct(Product** product){
     (*product)->id = (int)++numberOfProducts;
 }
 
-void setProductData(Product* product,char*name,enum ProductType type,unsigned int amount){
-    if(!product){
-        printErrorMessage(NULL_POINTER_EXCEPTION);
+void setProduct(Product** product, char* name, enum ProductType productType, int amount) {
+    if(*product == NULL){
+        createProduct(product);
     }
-    strcpy(product->name,name);
-    product->type = type;
-    product->amount = amount;
-    product->creationDate = time(NULL);
+
+    (*product)->id = numberOfProducts += strlen(name);
+    (*product)->name = name;
+    (*product)->type = productType;
+    (*product)->amount = amount;
+    (*product)->timestamp = time(NULL);
+    (*product)->code = generateProductCode(**product);
 }
 
-void printProduct(Product* product,char* destination){
+char* generateProductCode(Product product){
+    char* code = (char*)malloc((10+1) * sizeof(char));
+    long long int ts = (long long int)product.timestamp;
+    int index = 0;
+
+    while (ts){
+        code[index++] = 'A' + (ts % 10) + product.id;   // shift code by id to make it unique;
+        ts /= 10;
+    }
+    code[index] = '\0';
+
+    return code;
+}
+
+void printProduct(Product* product){
     if(!product){
         printErrorMessage(NULL_POINTER_EXCEPTION);
     }
-    freopen(destination,"w",stdout);
-    printf("\t%s details:\n"
-           "\t\t - ID: %i\n"
-           "\t\t - TYPE: %s\n"
-           "\t\t - AMOUNT: %u\n"
-           "\t\t - CREATION DATE: %lld\n",
-           product->name,
-           product->id,
-           getProductType(product->type),
-           product->amount,
-           product->creationDate);
-    freopen(CON,"w",stdout);
+    else{
+        printf("\nDetails of product #%i: \n", product->id);
+        printf("Code:           %s \n", product->code);
+        printf("Name:           %s \n", product->name);
+        printf("Type:           %s \n", getProductType(product->type));
+        printf("Amount:         %i \n", product->amount);
+        printf("Timestamp:      %li \n\n", product->timestamp);
+    }
 }
 
 void deleteProduct(Product **product) {

@@ -317,6 +317,34 @@ CMakeFiles/SapiSales.dir/sapi_sales/src/models/binary_search_tree/users_bst.c.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SapiSales.dir/sapi_sales/src/models/binary_search_tree/users_bst.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\CLionProject\SapiSales\sapi_sales\src\models\binary_search_tree\users_bst.c -o CMakeFiles\SapiSales.dir\sapi_sales\src\models\binary_search_tree\users_bst.c.s
 
+CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.obj: CMakeFiles/SapiSales.dir/flags.make
+CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.obj: CMakeFiles/SapiSales.dir/includes_C.rsp
+CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.obj: ../sapi_sales/src/models/hash/product_hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProject\SapiSales\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\SapiSales.dir\sapi_sales\src\models\hash\product_hash.c.obj -c D:\CLionProject\SapiSales\sapi_sales\src\models\hash\product_hash.c
+
+CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\CLionProject\SapiSales\sapi_sales\src\models\hash\product_hash.c > CMakeFiles\SapiSales.dir\sapi_sales\src\models\hash\product_hash.c.i
+
+CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\CLionProject\SapiSales\sapi_sales\src\models\hash\product_hash.c -o CMakeFiles\SapiSales.dir\sapi_sales\src\models\hash\product_hash.c.s
+
+CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.obj: CMakeFiles/SapiSales.dir/flags.make
+CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.obj: CMakeFiles/SapiSales.dir/includes_C.rsp
+CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.obj: ../sapi_sales/src/manager/lab12.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProject\SapiSales\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\SapiSales.dir\sapi_sales\src\manager\lab12.c.obj -c D:\CLionProject\SapiSales\sapi_sales\src\manager\lab12.c
+
+CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\CLionProject\SapiSales\sapi_sales\src\manager\lab12.c > CMakeFiles\SapiSales.dir\sapi_sales\src\manager\lab12.c.i
+
+CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\CLionProject\SapiSales\sapi_sales\src\manager\lab12.c -o CMakeFiles\SapiSales.dir\sapi_sales\src\manager\lab12.c.s
+
 # Object files for target SapiSales
 SapiSales_OBJECTS = \
 "CMakeFiles/SapiSales.dir/sapi_sales/src/main.c.obj" \
@@ -336,7 +364,9 @@ SapiSales_OBJECTS = \
 "CMakeFiles/SapiSales.dir/sapi_sales/src/models/list/user_list.c.obj" \
 "CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab7.c.obj" \
 "CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab8.c.obj" \
-"CMakeFiles/SapiSales.dir/sapi_sales/src/models/binary_search_tree/users_bst.c.obj"
+"CMakeFiles/SapiSales.dir/sapi_sales/src/models/binary_search_tree/users_bst.c.obj" \
+"CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.obj" \
+"CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.obj"
 
 # External object files for target SapiSales
 SapiSales_EXTERNAL_OBJECTS =
@@ -359,11 +389,13 @@ SapiSales.exe: CMakeFiles/SapiSales.dir/sapi_sales/src/models/list/user_list.c.o
 SapiSales.exe: CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab7.c.obj
 SapiSales.exe: CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab8.c.obj
 SapiSales.exe: CMakeFiles/SapiSales.dir/sapi_sales/src/models/binary_search_tree/users_bst.c.obj
+SapiSales.exe: CMakeFiles/SapiSales.dir/sapi_sales/src/models/hash/product_hash.c.obj
+SapiSales.exe: CMakeFiles/SapiSales.dir/sapi_sales/src/manager/lab12.c.obj
 SapiSales.exe: CMakeFiles/SapiSales.dir/build.make
 SapiSales.exe: CMakeFiles/SapiSales.dir/linklibs.rsp
 SapiSales.exe: CMakeFiles/SapiSales.dir/objects1.rsp
 SapiSales.exe: CMakeFiles/SapiSales.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProject\SapiSales\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking C executable SapiSales.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProject\SapiSales\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable SapiSales.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SapiSales.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
